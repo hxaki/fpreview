@@ -1,0 +1,20 @@
+{
+  "name": "fakku-preview",
+  "version": "0.1.0",
+  "description": "Preview extension for Fakku links.",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-contrib-clean": "~0.6.0",
+    "grunt-mkdir": "~0.1.2",
+    "grunt-contrib-copy": "~0.7.0",
+    "grunt-contrib-jshint": "~0.10.0",
+    "browserify": "~7.0.3",
+    "grunt-browserify": "~3.2.1",
+    "grunt-contrib-uglify": "~0.6.0"
+  },
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "export-symbol": "fpreview.exports"
+}
