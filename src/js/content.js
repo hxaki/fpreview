@@ -1,4 +1,5 @@
 var links = document.getElementsByTagName('a');
+var request = require('request');
 function mouseOverHandler() {
   "use strict";
   return function () {
@@ -6,5 +7,10 @@ function mouseOverHandler() {
   };
 }
 for (var i = 0; i<links.length; i++) {
-  links[i].addEventListener('onmouseover', mouseOverHandler());
+  links[i].addEventListener('mouseover', mouseOverHandler());
+  request('https://api.fakku.net', function(error, response, body) {
+    if (!error && response.statusCode == 200) {
+      console.log(body);
+    }
+  });
 }
